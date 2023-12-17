@@ -53,6 +53,8 @@ print(int(x)+int(y))
 # age=int(input("Enter your age: "))
 # print("His age is " + str(age))     #Making integer to string to concatenate
 
+age=input()
+print(type(age))    #displays the data type of age
 
 #--->Operators
 a=10
