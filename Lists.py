@@ -41,7 +41,11 @@ for n in name:
     print(n+ ", ")
 #Here n represents name of people in the list
 
-
+nums=[4,7,3,1]
+for x in nums:
+    print(x*2)
+    
+    
 # #Shopping Market
 # cart=[120,42,15,9,5,380]
 # d=int(input()) #takes integer as an input
@@ -68,6 +72,9 @@ print(x[::-1])
 
 #List Functions
 num=[1,2,3,4,5,1,8,5,2,3,5]
+num[6]=2
+num[8]=8
+print(num)
 print(len(num))         #count the total numbers
 num.append(10)          #add an item to the list
 print(num)
@@ -80,6 +87,7 @@ print(num.count(5))     #counts the number of times it is repeated
 (num.reverse())         #reverse whole list
 print(num)
 print(num[8:5:-1])
+
 
 
 #format function enables us to place values in the placeholders
