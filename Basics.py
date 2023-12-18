@@ -17,7 +17,15 @@ print(30 % 5) #"%" --> remainder
 #--->String
 print("Hello")
 print('Hello')
-print('"I\'m a good person"')
+print('"I\'m a good person"', end=".\n")
+
+#Formatting Strings
+name = input("What's your name? ")
+name=name.strip().title()
+print(f"hello, {name}")
+#strip removes whitespace
+#title capitalize the letter of each word
+# f treats the string in a special way
 
 
 #--->New Lines
@@ -46,15 +54,21 @@ y="9"
 print(int(x)+int(y))
 
 
-# #--->User Inputs
-# name=input("Enter your Name: ")
-# print("His name is " + name)
+#--->User Inputs
+name=input("Enter your Name: ")
+print("His name is " + name)
 
-# age=int(input("Enter your age: "))
-# print("His age is " + str(age))     #Making integer to string to concatenate
+age=int(input("Enter your age: "))
+print("His age is " + str(age))     #Making integer to string to concatenate
 
 age=input()
 print(type(age))    #displays the data type of age
+
+
+x=float(input("Enter x"))
+y=float(input("Enter y"))
+z=round(x+y)        #Creates a rounded result
+print(f"{z:,}")     #prints z with commas like 2,890
 
 #--->Operators
 a=10
