@@ -70,7 +70,8 @@ y=float(input("Enter y"))
 z=round(x+y)        #Creates a rounded result
 print(f"{z:,}")     #prints z with commas like 2,890
 
-#--->Operators
+
+#--->Comparision Operators
 a=10
 print(a)            #10
 print(a<5)          #False
@@ -78,6 +79,7 @@ print(a>5)          #True
 print(a>=10)        #True
 print(a<10)         #False
 print(a!=5)         #True
+
 
 
 #--->Control Flow
@@ -111,8 +113,8 @@ else:
 #--->Boolean Logic
 a=10
 b=20
-print(a==a and b==b)        #True
-print(a==b or b==b)         #True
+print(a==a & b==b)        #True
+print(a==b | b==b)         #True
 print(not a==b)             #True
 
 if not True:
