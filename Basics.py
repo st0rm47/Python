@@ -144,4 +144,16 @@ while a >=0:
     print(total)
     
 
+#--->Switch Case
+#Match Statment
+name=input("Enter your name: ")
+match name:
+    case "Hari":
+        print("Bad Boy")
+    case "Ram":
+        print("Good Boy")
+    case _:
+        print("Not Known")
+
+
     
