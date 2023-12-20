@@ -114,7 +114,7 @@ print("world".upper())
 print("WORLD".lower())
 #Lowercase
 
-print('China,Aus,Uk, US'.split(","))
+print('China,Aus,Uk, US'.split(" "))
 #Split by searching ,
 
 

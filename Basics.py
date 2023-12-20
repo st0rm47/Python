@@ -109,6 +109,17 @@ elif num==3:
 else:
     print("Fifteen")
 
+#Example:
+exp=input("Expression:")
+x, y, z = exp.split(" ")    #This will assign values to x y and z
+if (y=='+'):
+    print (float(x)+float(z))
+elif (y=='-'):
+    print (float(x)-float(z))
+elif (y=='/'):
+    print (float(x)/float(z))
+elif (y=='*'):
+    print (float(x)*float(z))
 
 #--->Boolean Logic
 a=10
