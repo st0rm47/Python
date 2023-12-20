@@ -116,3 +116,27 @@ print("WORLD".lower())
 
 print('China,Aus,Uk, US'.split(","))
 #Split by searching ,
+
+
+#File Extensions
+file_extensions = [
+    ('.gif', 'image/gif'),
+    ('.jpg', 'image/jpeg'),
+    ('.jpeg', 'image/jpeg'),
+    ('.png', 'image/png'),
+    ('.pdf', 'application/pdf'),
+    ('.txt', 'text/plain'),
+    ('.zip', 'application/zip')
+]
+
+x = input("Enter the name of a file: ")
+y = x.lower().strip()
+
+found = False
+for ext, content_type in file_extensions:
+    if y.endswith(ext):
+        print(content_type)
+        found = True
+        break
+else:
+    print("application/octet-stream")
