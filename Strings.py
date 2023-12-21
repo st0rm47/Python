@@ -26,7 +26,7 @@ for c in x:
 #Twitter
 x=str(input("Input: "))
 print("Output: ",end="")
-y=x.lower()
-for c in y:
-    if c not in ['a','e','i','o','u']:
+for c in x:
+    if c.lower() not in ['a','e','i','o','u']:
         print(c,end="")
+
