@@ -12,6 +12,7 @@ print(f"hello, {name}")
 # f treats the string in a special way
 
 
+#Example:
 x=input("camelCase: ")
 print("snake_case: ",end="")
 for c in x:
@@ -21,3 +22,11 @@ for c in x:
         print(c,end="")
 #isupper() checks whether there is uppercase or not
 #lower() lower cases the text
+
+#Twitter
+x=str(input("Input: "))
+print("Output: ",end="")
+y=x.lower()
+for c in y:
+    if c not in ['a','e','i','o','u']:
+        print(c,end="")
