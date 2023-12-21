@@ -14,20 +14,6 @@ print(30 % 5) #"%" --> remainder
 #ans-->0
 
 
-#--->String
-print("Hello")
-print('Hello')
-print('"I\'m a good person"', end=".\n")
-
-#Formatting Strings
-name = input("What's your name? ")
-name=name.strip().title()
-print(f"hello, {name}")
-#strip removes whitespace
-#title capitalize the letter of each word
-# f treats the string in a special way
-
-
 #--->New Lines
 print("One \n Two")
 print("Name \t Age \t Contact")
