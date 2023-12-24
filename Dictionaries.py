@@ -6,6 +6,9 @@ store={
     "Mango" :6
 }
 print(store["Mango"])
+#Key = String
+
+
 
 students = {
     "Ram" : "KATHMANDU",
