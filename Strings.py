@@ -57,3 +57,6 @@ main()
 #isalnuma() checks whether it is alphabets and numbers only or not
 #isdigit() checks whether it is digits only or not
 
+#format function enables us to place values in the placeholders
+msg="{3}{1}{2}{0}".format("Subodh ","Priyanka ","Nikita ","Melin ")
+print(msg)
