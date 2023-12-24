@@ -1,7 +1,8 @@
 #--->Lists
 #indexing always starts from 0
 names=["Subodh", "Priyanka" ,"Firoj" ,"Rohan" ,"Ram"]
-print(names[1][6])
+names[4]="Melin"
+print(names[4][2])
 
 
 #String as a list
