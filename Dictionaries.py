@@ -1,58 +1,58 @@
-# #--->Dictionaries
-# store={
-#     "Orange" :2,
-#     "Apple" :5,
-#     "Banana" :10,
-#     "Mango" :6
-# }
-# print(store["Mango"])
+#--->Dictionaries
+store={
+    "Orange" :2,
+    "Apple" :5,
+    "Banana" :10,
+    "Mango" :6
+}
+print(store["Mango"])
 
-# students = {
-#     "Ram" : "KATHMANDU",
-#     "Sita" : "Lalitpur",
-# }
-# for x in students:
-#     print(x,students[x])
+students = {
+    "Ram" : "KATHMANDU",
+    "Sita" : "Lalitpur",
+}
+for x in students:
+    print(x,students[x])
   
   
-# #List of Dictionaries 
-# details=[
-#     {"name": "Hari", "house": "Kathmandu", "level": "Bachelor"},
-#     {"name": "Sita", "house": "Dang", "level": "Bachelor"},
-#     {"name": "Ramesh", "house": "Lalitpur", "level": "+2"},
-# ]
-# for x in details:
-#     if x["name"]=="Hari":
-#         print(x["name"],x["house"],x["level"])
+#List of Dictionaries 
+details=[
+    {"name": "Hari", "house": "Kathmandu", "level": "Bachelor"},
+    {"name": "Sita", "house": "Dang", "level": "Bachelor"},
+    {"name": "Ramesh", "house": "Lalitpur", "level": "+2"},
+]
+for x in details:
+    if x["name"]=="Hari":
+        print(x["name"],x["house"],x["level"])
 
-# #Example:
-# x=input("Enter a fruit name:")
-# fruits=[
-# {"name": "Apple", "value": "130"},
-# {"name": "Avocado", "value": "50"},
-# {"name": "Banana", "value": "110"},
-# {"name": "Cantaloupe", "value": "50"},
-# {"name": "Grapefruit", "value": "60"},
-# {"name": "Grapes", "value": "90"},
-# {"name": "Honeydew Melon", "value": "50"},
-# {"name": "Kiwifruit", "value": "90"},
-# {"name": "Lemon", "value": "15"},
-# {"name": "Lime", "value": "20"},
-# {"name": "Nectarine", "value": "60"},
-# {"name": "Orange", "value": "80"},
-# {"name": "Peach", "value": "60"},
-# {"name": "Pear", "value": "100"},
-# {"name": "Pineapple", "value": "50"},
-# {"name": "Plums", "value": "70"},
-# {"name": "Strawberries", "value": "50"},
-# {"name": "Sweet Cherries", "value": "100"},
-# {"name": "Tangerine", "value": "50"},
-# {"name": "Watermelon", "value": "80"},
-# ]
-# x=x.title()
-# for y in fruits:
-#     if y["name"]==x:
-#         print("Calories:",y["value"])
+#Example:
+x=input("Enter a fruit name:")
+fruits=[
+{"name": "Apple", "value": "130"},
+{"name": "Avocado", "value": "50"},
+{"name": "Banana", "value": "110"},
+{"name": "Cantaloupe", "value": "50"},
+{"name": "Grapefruit", "value": "60"},
+{"name": "Grapes", "value": "90"},
+{"name": "Honeydew Melon", "value": "50"},
+{"name": "Kiwifruit", "value": "90"},
+{"name": "Lemon", "value": "15"},
+{"name": "Lime", "value": "20"},
+{"name": "Nectarine", "value": "60"},
+{"name": "Orange", "value": "80"},
+{"name": "Peach", "value": "60"},
+{"name": "Pear", "value": "100"},
+{"name": "Pineapple", "value": "50"},
+{"name": "Plums", "value": "70"},
+{"name": "Strawberries", "value": "50"},
+{"name": "Sweet Cherries", "value": "100"},
+{"name": "Tangerine", "value": "50"},
+{"name": "Watermelon", "value": "80"},
+]
+x=x.title()
+for y in fruits:
+    if y["name"]==x:
+        print("Calories:",y["value"])
         
         
 
