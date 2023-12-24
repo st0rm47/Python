@@ -40,3 +40,23 @@ except ZeroDivisionError:
 # raise creates another error
 # pass doesnot warns the user about the error
     
+    
+#Example:
+while True:
+    frac=input("Fraction: ")
+    try:
+        x, y =frac.split("/")
+        x=int(x)
+        y=int(y)
+        fuel=x/y
+        if fuel<=1:
+            break
+    except(ValueError,ZeroDivisionError):
+        pass
+p=int(fuel*100)
+if p<=1:
+    print("E")
+elif p>=99:
+    print("F")
+else:
+    print(f"{p}%")
