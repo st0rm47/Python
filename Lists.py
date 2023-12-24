@@ -89,11 +89,15 @@ print(num.count(5))     #counts the number of times it is repeated
 print(num)
 print(num[8:5:-1])
 
-
-
-#format function enables us to place values in the placeholders
-msg="{3}{1}{2}{0}".format("Subodh ","Priyanka ","Nikita ","Melin ")
-print(msg)
+if all([i>5 for i in num]):
+    print("All numbers larger than 5")
+    #prints only if all numbers > 5
+if any(i%2 == 0 for i in num):
+    print("At least one is even")
+    #prints if any number is even
+for v in enumerate(num):
+    print(v)
+    #enumerate function makes indices of a list
 
 
 #--->String Functions
@@ -119,6 +123,7 @@ print('China,Aus,Uk, US'.split(" "))
 #Split by searching ,
 
 
+
 #File Extensions
 file_extensions = [
     ('.gif', 'image/gif'),
@@ -141,3 +146,13 @@ for ext, content_type in file_extensions:
         break
 else:
     print("application/octet-stream")
+
+
+
+#--->List Comprehensions
+#Creating a list
+cubes=[i**3 for i in range(10)]
+print(cubes)
+
+evens=[i for i in range(10) if i%2 ==0]
+print(evens)
