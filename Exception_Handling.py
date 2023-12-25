@@ -60,3 +60,33 @@ elif p>=99:
     print("F")
 else:
     print(f"{p}%")
+    
+
+#Example:
+months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+]
+
+while True:
+    date = input("Date: ").strip()
+    try:
+        if "/" in date:
+            month, day, year = date.split("/")
+            if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
+                print(f"{year}-{int(month):02d}-{int(day):02d}")
+                break
+
+        if "," in date:
+            month_str, day_str, year = date.split(" ")
+            if month_str in months:
+                day = day_str.replace(",", "")
+                day = int(day)
+                month = months.index(month_str) + 1
+                if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
+                    print(f"{year}-{int(month):02d}-{int(day):02d}")
+                    break
+
+    except(ValueError, IndexError):
+        pass
+
