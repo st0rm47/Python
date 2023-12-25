@@ -92,3 +92,43 @@ def convert(time,am_pm):
 
 if __name__ == "__main__":
     main()
+    
+
+#Password Checker
+password = input()
+repeat = input()
+
+def valid(a,b):
+    if a==b:
+        print("Correct")
+    else:
+        print("Incorrect")
+valid(password,repeat)
+
+
+#Asterisk(*) Generator
+s = input()
+def asteriskgen(text):
+    s1=s.replace(" ","")
+    return ("*"+s1)
+print(asteriskgen(s))
+
+
+#Reassigning functions to a variable
+def shout(word):
+    return word + "!"
+speak = shout               #shout function is renamed as speak
+output = speak ("Hey")
+print(output)
+
+
+#Function as an argument of another functions
+def add(x,y):
+    return x+y
+def twice(func,x,y):
+    return func(func(x,y),func(x,y))
+
+a=10
+b=15
+print(twice(add,a,b))
+
