@@ -69,7 +69,7 @@ import datetime
 x=datetime.datetime.now()
 print(x.year)
 
-Packages
+#-->Packages
 import cowsay
 import sys
 
@@ -82,3 +82,31 @@ import emoji
 var=str(input("Input:")).strip().lower()
 z=emoji.emojize(var)
 print(z)
+
+
+#Example:
+import random
+while True:
+    try:
+        x=int(input("Level:"))
+        x=int(x)
+        if x >0:
+            break
+    except ValueError:
+        pass
+
+value=random.randint(1,x)
+while True:
+    try:
+        y=int(input("Guess:"))
+        y=int(y)
+        if y>0:
+            if y==value:
+                print("Just right!")
+                break
+            elif y> value:
+                print("Too large!")
+            else:
+                print("Too small!")
+    except ValueError:
+        pass
