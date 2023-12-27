@@ -110,3 +110,48 @@ while True:
                 print("Too small!")
     except ValueError:
         pass
+
+
+#Math Problem
+import random
+def main():
+    count= 0
+    n = get_level()
+    for i in range(10):
+        x, y = generate_integer(n)
+        for j in range(3):
+            try:
+                answer = int(input(f"{x} + {y} ="))
+            except ValueError:
+                pass
+            else:
+                if answer == x + y:
+                    count = count + 1
+                    break
+                else:
+                    print("EEE")
+                    if j == 2:
+                        print(f"{x} + {y} = {x+y}")
+    print("Score: ", count)
+
+def get_level():
+    while True:
+        try:
+            z = int(input())
+            if 0 < z < 4:
+                return z
+            else:
+                raise ValueError
+        except ValueError:
+            pass
+
+def generate_integer(level):
+        min = 10**(level-1)
+        max = 10**level-1
+        x = random.randint(min,max)
+        y = random.randint(min,max)
+        return x,y
+
+
+if __name__ == "__main__":
+    main()
