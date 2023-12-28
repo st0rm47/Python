@@ -155,3 +155,24 @@ def generate_integer(level):
 
 if __name__ == "__main__":
     main()
+
+
+#Bitcoin Problem
+import requests
+import sys
+
+try:
+    if len(sys.argv) != 2:
+        sys.exit("Missing command-line argument")
+    elif not float(sys.argv[1]):
+        sys.exit("Command-line argument is not a number")
+    else:
+        n = sys.argv[1]
+        response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+        r = response.json()
+        bitcoin = r["bpi"]["USD"]["rate_float"]
+        amount = bitcoin * float(n)
+        print(f"${amount:,.4f}")
+except requests.RequestException:
+    print("Request Exception")
+
