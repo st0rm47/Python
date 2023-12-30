@@ -24,6 +24,7 @@ random.shuffle(cards)
 for card in cards:
     print(card)
     
+    
 #-->Statistics
 import statistics
 values=statistics.mean([100,110])
@@ -31,6 +32,7 @@ print(values)
 
 value=statistics.mode([1,2,3,4,6,5,1,1,2,3])
 print(value)
+
 
 #-->Math
 import math
@@ -42,6 +44,7 @@ print(pi)
 
 from math import sqrt as square_root
 print(square_root(100))
+
 
 #-->Sys
 import sys
@@ -64,10 +67,12 @@ if len(sys.argv) != 2:
 response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
 print(response.json())
 
+
 #-->Date and Time
 import datetime
 x=datetime.datetime.now()
 print(x.year)
+
 
 #-->Packages
 import cowsay
@@ -77,7 +82,7 @@ if len(sys.argv) == 2:
     cowsay.trex("hello, " + sys.argv[1])
     
     
-    
+#Example:
 import emoji
 var=str(input("Input:")).strip().lower()
 z=emoji.emojize(var)
