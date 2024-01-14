@@ -154,13 +154,10 @@ elif not sys.argv[1].endswith(".csv"):
 else:
     try:
         with open(sys.argv[1], "r") as file:
-            reader = csv.DictReader(file)
+            reader = csv.reader(file)
             for row in reader:
-                pizza.append({"Sicilian Pizza": row["Sicilian Pizza"], "Small": row["Small"], "Large": row["Large"]})
-        headers = pizza[0].keys()
-        table = [list(p.values()) for p in pizza]
-        print(tabulate(table, headers, tablefmt="grid"))
-
+                pizza.append(row)
+        print(tabulate(pizza[1:], pizza[0], tablefmt="grid"))
     except FileNotFoundError:
         sys.exit("File does not exist")
 
