@@ -136,3 +136,31 @@ home = input("Home: ")
 with open("students2.csv", "a") as file:
     writer = csv.DictWriter(file, fieldnames= ["name","home"])
     writer.writerow({"name":name, "home":home})
+    
+    
+
+#Example:
+import sys
+import csv
+from tabulate import tabulate
+
+pizza=[]
+if len(sys.argv) > 2:
+    sys.exit("Too many command-line arguments")
+elif len(sys.argv) < 2:
+    sys.exit("Too few command-line arguments")
+elif not sys.argv[1].endswith(".csv"):
+    sys.exit("Not a CSV file")
+else:
+    try:
+        with open(sys.argv[1], "r") as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                pizza.append({"Sicilian Pizza": row["Sicilian Pizza"], "Small": row["Small"], "Large": row["Large"]})
+        headers = pizza[0].keys()
+        table = [list(p.values()) for p in pizza]
+        print(tabulate(table, headers, tablefmt="grid"))
+
+    except FileNotFoundError:
+        sys.exit("File does not exist")
+
