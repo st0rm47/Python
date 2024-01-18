@@ -161,3 +161,27 @@ else:
     except FileNotFoundError:
         sys.exit("File does not exist")
 
+#Example:
+import sys
+import csv
+
+before = []
+if len(sys.argv) > 3:
+    sys.exit("Too many command-line arguments")
+elif len(sys.argv) < 3:
+    sys.exit("Too few command-line arguments")
+else:
+    try:
+        with open(sys.argv[1]) as file1:
+            reader = csv.DictReader(file1)
+            for row in reader:
+                split_name = row["name"].split(",")
+                before.append({"first":split_name[1].strip(), "last":split_name[0].strip(), "house":row["house"]})
+    except FileNotFoundError:
+        sys.exit("Could not read " + sys.argv[1])
+
+    with open(sys.argv[2], "w") as file2:
+        writer = csv.DictWriter(file2,fieldnames=["first","last","house"])
+        writer.writerow({"first":'first',"last":'last',"house":'house'})
+        for row in before:
+            writer.writerow({"first":row["first"],"last":row["last"],"house":row["house"]})
