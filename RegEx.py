@@ -36,4 +36,16 @@ if re.search(r"^\w+@[a-zA-Z0-9_]+\.(com|edu|gov|net|co|org)$",email):
     print("Valid")
 else:
     print("Invalid")
+
+#Case-Sensitive Check
+import re
+email= input("Email:").strip()
+if re.search(r"^\w+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE):
+    # re.IGNORECASE ignores the sensitive cases
+    # (\w+\.) refers to a new expression and can be there once or not at all
+    # ? matches zero or one occurrence of the pattern left to it.
+    print("Valid")
+else:
+    print("Invalid")
     
+#Cleaning Up User Input
