@@ -49,3 +49,24 @@ else:
     print("Invalid")
     
 #Cleaning Up User Input
+
+
+
+
+
+
+#Extracting User Input
+import re
+url = input("URL: ").strip()
+username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
+    # sub is used to replace the string [sub(pattern, repl, string)]
+print(f"Username: {username}")
+
+import re
+url = input("URL: ").strip()
+if matches := re.search(r"^(https?://)?(www\.)?twitter\.com/([a-zA-Z0-9_]+)$", url, re.IGNORECASE):
+    # ([a-zA-Z0-9_]) refers to the group of characters
+    # + indicates the repetition of characters
+    # search value is stored in matches
+    print(f"Username:", matches.group(3))
+    
