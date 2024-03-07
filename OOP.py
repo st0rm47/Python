@@ -204,13 +204,11 @@ if __name__ == "__main__":
 ###--->Abstraction
 
 from abc import ABC, abstractmethod
-
 # Abstract base class
 class Animal(ABC):
     @abstractmethod
     def make_sound(self):
         pass
-
 # Concrete classes
 class Dog(Animal):
     def make_sound(self):
@@ -233,54 +231,59 @@ if __name__ == "__main__":
     main()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# #Raise
-# class Student:  #class
-#     #Constructor function
-#     def __init__(self,name,house):
-#         if not name or not house:
-#             raise ValueError("Name and House are required")
-#         #instance variables
-#         self.name = name
-#         self.house = house
+###--->Raise
+class Student:  #class
+    #Constructor function
+    def __init__(self,name,house):
+        if not name or not house:
+            raise ValueError("Name and House are required")
+        #instance variables
+        self.name = name
+        self.house = house
     
-# def main():
-#     #create object
-#     student1 = Student("","")
-#     #access instance variables
-#     print(student1.name, student1.house)
+def main():
+    #create object
+    student1 = Student("","")
+    #access instance variables
+    print(student1.name, student1.house)
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
+
+
+###---> Class Methods
+class MathOperations:
+    @classmethod
+    def add(cls, x, y):
+        return x + y
+
+    @classmethod
+    def multiply(cls, x, y):
+        return x * y
+
+# Using the class methods
+sum_result = MathOperations.add(5, 3)
+print("Sum:", sum_result)
+
+multiply_result = MathOperations.multiply(5, 3)
+print("Multiplication:", multiply_result)
+
+
+###---> Static Methods
+class MathOperations:
+    @staticmethod
+    def add(x, y):
+        return x + y
+
+    @staticmethod
+    def multiply(x, y):
+        return x * y
+
+# Using the static methods
+sum_result = MathOperations.add(5, 3)
+print("Sum:", sum_result)
+
+multiply_result = MathOperations.multiply(5, 3)
+print("Multiplication:", multiply_result)
+
 
