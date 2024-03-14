@@ -73,3 +73,53 @@ names = ['Subodh', 'Priyanka', 'Firoj', 'Melin']
 result = list(filter(lambda x : len(x)> 5, names))
 print(result)
 
+
+
+###---> Generators
+    # can be created using functions and yield statements
+    # yield ==> replaces return
+    
+def countdown():
+    i = 5
+    while i >0:
+        yield i
+        # returns data one at a time
+        i-=1
+for i in countdown():
+    print(i)
+
+txt = input()
+def words(txt):
+   for word in txt.split(" "):
+        yield word
+
+print(list(words(txt)))
+
+
+###---> Decorators
+    # function that takes a function and returns by adding some functionality
+def make_pretty(func):
+    def inner():
+        print("I got decorated")
+        func()
+    return inner
+def ordinary():
+    print("I am ordinary")
+decorated_func = make_pretty(ordinary)
+decorated_func()
+
+# @ Symbol with Decorators 
+@make_pretty
+def handsome():
+    print("He's handsome")
+handsome()
+
+
+###---> Enumerate
+
+names = ("Subodh", "Priyanka", "Melin", "Firoj", "Nikita" , "Saugat")
+print(list(enumerate(names)))
+
+for i, names in enumerate(names):
+    print(i+1, names)
+    
