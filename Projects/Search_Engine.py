@@ -1,15 +1,16 @@
 ###--->Creating a Search Engine
 
-text=input("Enter your text:")  
-#Here it takes the data you want to search from. For example we can search from wikipedia
+def search(text, word):
+    text_lower = text.lower()
+    word_lower = word.lower()
 
-word=input("Enter your word: ")
-#Here it takes the word you want to search from the data given above
+    if word_lower in text_lower:
+        index = text_lower.index(word_lower)
+        return f"Found '{word}' at index {index} in the text."
+    else:
+        return "Oops, Sorry! Word not found in the text."
 
-def search(text,word):
-    if word in text:    #If thew word we searched in the databsae is found it will return the word
-        return(word)
-    else:               #If the word is not in database it returns with the statement.
-        return("Oops, Sorry!")
+text = input("Enter your text: ")
+word = input("Enter your word: ")
 
-print(search(text,word))
+print(search(text, word))
