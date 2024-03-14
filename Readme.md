@@ -1,32 +1,44 @@
-<!-- # Python Repository Files
+# Python Repository Files
 
 This is a list of files in the Python repository.
 
 ## Python Files
 
-| File Name                 | Description                                             |
+| *File Name*                 | *Description*                                             |
 |---------------------------|---------------------------------------------------------|
-| [Basics](Basics.py)    | Python script covering basic Python concepts.         |
-| [Strings](Strings.py)  | Python script demonstrating string manipulation.        |
-| [Lists](Lists.py)      | Python script showcasing list operations.               |
-| [Dictionaries](Dictionaries.py) | Python script illustrating dictionary usage.     |
-| [Range](Range.py)               | Python script demonstrating usage of the range function. |
-| [Functions](Functions.py)       | Python script demonstrating function creation and usage. |
-| [Exception Handling](Exception_Handling.py) | Python script illustrating exception handling. |
-| [File Handling](File.py)             | Python script showcasing file handling operations. |
-| [Assert](Assert.py)             | Python script demonstrating assertion    |
-| [Modules](Function_and_Modules.py)        | Python script showcasing module import and usage.        |
-| [OOP](OOP.py)         | Python script illustrating OOP concepts. |
-| [RegularExpressions](RegEx.py) | Python script showcasing regular expressions.          |
+| [**Basics**](/Codes/Basics.py)    | Basic Python concepts.         |
+| [**Strings**](/Codes/Strings.py)  | String manipulation.        |
+| [**Lists**](/Codes/Lists.py)      | List operations and functions.               |
+| [**Dictionaries**](/Codes/Dictionaries.py) | Dictionary usage.     |
+| [**Range**](/Codes/Range.py)               | Range function. |
+| [**Functions**](/Codes/Functions.py)       | Function creation and usage. |
+| [**Exception Handling**](/Codes/Exception_Handling.py) | Handling of Errors. |
+| [**File Handling**](/Codes/File.py)             | File handling operations. |
+| [**Assert**](/Codes/Assert.py)             | Assertion    |
+| [**Modules**](/Codes/Modules.py)        | Module import and usage.        |
+| [**OOP**](/Codes/OOP.py)         | OOP concepts. |
+| [**RegularExpressions**](/Codes/RegEx.py) | Regular expressions.          |
+| [**Extra**](/Codes/Extra.py) | Lambdas, map, filter and many more.       |
+
+
+## Simple Projects
+| *File Name*                            | *Description*                                                                                     |
+|--------------------------------------|-------------------------------------------------------------------------------------------------|
+| [**BMI Calculator**](/Projects/BMI.py)   | A simple BMI (Body Mass Index) calculator that takes input for height and weight and calculates the BMI. |
+| [**Simple Calculator**](/Projects/Calculator.py) | A basic calculator that can perform addition, subtraction, multiplication, and division. |
+| [**Rock Paper Scissors**](/Projects/Game.py) | A console-based game of Rock, Paper, Scissors where the user plays against the computer. |
+| [**Search Engine**](/Projects/Search_Engine.py)   | A simple search engine that allows the user to search for a word in a given text and returns the index of the first occurrence of the word. |
+
+
 
 
 ## Other Files
 
-| File Name               | Description                                                  |
+| *File Name*               | *Description*                                                  |
 |-------------------------|--------------------------------------------------------------|
-| [students.csv](./students.csv)   | Sample dataset containing information about students, for use with Python scripts.       |
-| [students1.csv](./students1.csv) | Sample dataset, a duplicate of students.csv.       |
-| [students2.csv](./students2.csv) | Sample dataset, another duplicate of students.csv.       |
-| [testing.txt](./testing.txt)   | Text file for testing purposes.      |
-| [names.txt](./names.txt)       | Text file containing names.       |
- -->
+| [**students.csv**](/Files/students.csv)   | Sample dataset containing information about students, for use with Python scripts.       |
+| [**students1.csv**](/Files/students1.csv) | Sample dataset, a duplicate of students.csv.       |
+| [**students2.csv**](/Files/students2.csv) | Sample dataset, another duplicate of students.csv.       |
+| [**testing.txt**](/Files/testing.txt)   | Text file for testing purposes.      |
+| [**names.txt**](/Files/names.txt)       | Text file containing names.       |
+
