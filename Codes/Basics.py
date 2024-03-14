@@ -1,5 +1,3 @@
-#Basics Day 1
-
 print(2+3) #"+" --> addition
 #ans-->5 
 print(11/2) #"/" --> division
