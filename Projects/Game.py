@@ -27,7 +27,6 @@ def main():
     computer_pick = get_computers_choice()
     user_pick = get_user_input()
     result = get_result(user_pick, computer_pick)
-    
     print(f"Computer's pick: {computer_pick}")
     print(f"Your pick: {user_pick}")
     print(f"You {result}")
