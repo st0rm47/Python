@@ -8,8 +8,6 @@ store={
 print(store["Mango"])
 #Key = String
 
-
-
 students = {
     "Ram" : "KATHMANDU",
     "Sita" : "Lalitpur",
