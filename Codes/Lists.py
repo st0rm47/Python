@@ -100,30 +100,6 @@ for v in enumerate(num):
     #enumerate function makes indices of a list
 
 
-#--->String Functions
-print(", ".join(["USA","UK","China","Japan"]))
-#prints (USA, UK, China, Japan)
-
-print("Namaste Nepal".replace("Nepal", "Kathmandu"))
-#prints (Namaste Kathmandu)
-
-print("This is a sentence.".startswith("This"))
-# prints "True"
-
-print("This is a sentence.".endswith("sentence."))
-# prints "True"
-
-print("world".upper())
-#Uppercase
-
-print("WORLD".lower())
-#Lowercase
-
-print('China,Aus,Uk, US'.split(" "))
-#Split by searching ,
-
-
-
 #File Extensions
 file_extensions = [
     ('.gif', 'image/gif'),
