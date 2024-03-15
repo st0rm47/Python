@@ -28,6 +28,7 @@ This is a list of files in the Python repository.
 | [**Simple Calculator**](/Projects/Calculator.py) | A basic calculator that can perform addition, subtraction, multiplication, and division. |
 | [**Rock Paper Scissors**](/Projects/Game.py) | A console-based game of Rock, Paper, Scissors where the user plays against the computer. |
 | [**Search Engine**](/Projects/Search_Engine.py)   | A simple search engine that allows the user to search for a word in a given text and returns the index of the first occurrence of the word. |
+| [**Tic Tac Toe**](/Projects/TicTacToe.py) | A console-based game of Tic Tac Toe. |
 
 
 
