@@ -63,37 +63,49 @@ class Game:
     def play(self):
         #using infinite loop to run the game
         while True:
-            message = f"{self.player.name},Enter the position(1-9): "
-            if self.player.type == "X":
-                position = int(input(message))
-            
-                if self.board.update_board(position, self.player.type):
-                    self.board.print_board()
-
-                    if self.board.is_winner(self.player.type):
-                        print(f"{self.player.name} wins!")
-                        break
-                    elif self.board.check_draw():
-                        print("It's a draw!")
-                        break
-                    else:                   
-                        #Changing the player to computer
-                        self.player, self.computer = self.computer, self.player
+            try:
+                message = f"{self.player.name},\nEnter the position(1-9): "
+                if self.player.type == "X":
+                    position = int(input(message))
                 
+                    if self.board.update_board(position, self.player.type):
+                        self.board.print_board()
 
-            else:
-                position = random.randint(1, 9)
-                if self.board.update_board(position, self.player.type):
-                    self.board.print_board()
+                        if self.board.is_winner(self.player.type):
+                            print(f"{self.player.name} wins!")
+                            break
+                        elif self.board.check_draw():
+                            print("It's a draw!")
+                            break
+                        else:                   
+                            #Changing the player to computer
+                            self.player, self.computer = self.computer, self.player
                     
-                    if self.board.is_winner(self.player.type):
-                        print(f"{self.player.name} wins!")
-                        break
-                    elif self.board.check_draw():
-                        print("It's a draw!")
-                        break
-                    else:                   
-                        #Changing the player to USER
-                        self.player, self.computer = self.computer, self.player
-game = Game()
-game.play()
+
+                else:
+                    position = random.randint(1, 9)
+                    if self.board.update_board(position, self.player.type):
+                        print(f"{self.player.name} chose position: {position}")
+                        self.board.print_board()
+                        
+                        if self.board.is_winner(self.player.type):
+                            print(f"{self.player.name} wins!")
+                            break
+                        elif self.board.check_draw():
+                            print("It's a draw!")
+                            break
+                        else:                   
+                            #Changing the player to USER
+                            self.player, self.computer = self.computer, self.player
+            
+            except:
+                print("Invalid Number! Please enter a number between 1-9")
+                pass            
+
+#Running the game    
+def main():
+    game = Game()
+    game.play()
+
+if __name__ == "__main__":
+    main()
