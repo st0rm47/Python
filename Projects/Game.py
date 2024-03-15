@@ -33,3 +33,32 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def is_winner(self, type):
+        #Checking the rows
+        for i in range(0, 9, 3):
+            if self.board[i] == self.board[i + 1] == self.board[i + 2] == type:
+                return True
+        #Checking the columns
+        for i in range(3):
+            if self.board[i] == self.board[i + 3] == self.board[i + 6] == type:
+                return True
+        #Checking the diagonals
+        if self.board[0] == self.board[4] == self.board[8] == type:
+            return True
+        if self.board[2] == self.board[4] == self.board[6] == type:
+            return True
+        return False
+    
+    def check_draw(self):
+        return " " not in self.board
+
+
+
+                    if self.board.is_winner(self.player.type):
+                        print(f"{self.player.name} wins!")
+                        break
+                    elif self.board.check_draw():
+                        print("It's a draw!")
+                        break
+                    else:
