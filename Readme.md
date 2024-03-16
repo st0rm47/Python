@@ -31,8 +31,6 @@ This is a list of files in the Python repository.
 | [**Tic Tac Toe**](/Projects/TicTacToe.py) | A console-based game of Tic Tac Toe. |
 
 
-
-
 ## Other Files
 
 | *File Name*               | *Description*                                                  |
